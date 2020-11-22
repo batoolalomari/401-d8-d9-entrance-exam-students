@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% data.forEach(element=>{ %>
+       
+        <img src="<%=element.image%>" alt="">
+        <h2><%=element.name%></h2>
+        <h2><%=element.patronus%></h2>
+        <h2><%=element.alive%></h2>
+    
+        <form action="/character/<%=element.id%>" method="GET">
+            <button type="submit">Show details</button>
+        </form>
+    
+       <% }) %>
+</body>
+</html>

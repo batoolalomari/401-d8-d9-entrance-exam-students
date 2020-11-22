@@ -27,5 +27,6 @@
     "pg": "^8.4.2",
     "superagent": "^6.1.0"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {}
 }

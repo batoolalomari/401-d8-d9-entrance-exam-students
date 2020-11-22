@@ -1,11 +1,12 @@
-DROP character IF  EXISTS
-CREATE TABLE character(
-  
-  id SERIAL PRIMARY KEY NOT NULL,
-  name VARCHAR(256) ,
-  gender VARCHAR(256) ,
-  image VARCHAR(256)  ,
-  house VARCHAR(256)  
+CREATE TABLE IF NOT EXISTS
 
+character(
+
+  id SERIAL PRIMARY KEY NOT NULL,
+  image VARCHAR(256) ,
+  name VARCHAR(256) ,
+  patronus VARCHAR(256) ,
+  alive BOOLEAN 
 
 );
+
